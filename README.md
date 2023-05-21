@@ -6,22 +6,25 @@ This package is a utility that generates Lighthouse reports for a given URL and 
 
 To use this package, you need to have Node.js and npm (Node Package Manager) installed on your system. You can install this package by running the following command:
 
-```shell
+```
 npm install lightmeup
+```
 
 ##Usage
 
 To generate a Lighthouse report, you can run the following command:
 
-```shell
+```
 npx --url <url> --onlyCategories <categories>
+```
 
 Replace <url> with the URL you want to audit, and <categories> with the specific categories you want to include in the report. Available categories are: performance, accessibility and seo.
 
 For example, to generate a report for http://example.com and include the "performance" category, you would run:
 
-```shell
+```
 node lighthouse.js --url http://example.com --onlyCategories performance
+```
 
 The generated report will be saved in a directory with the structure url -> category
 
