@@ -1,7 +1,7 @@
 {
   "name": "lightmeup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Allows to run, save and open lighthouse reports from command line.",
   "main": "lighthouse.js",
   "type": "module",
   "scripts": {
