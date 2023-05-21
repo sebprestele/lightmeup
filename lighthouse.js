@@ -3,7 +3,6 @@ import lighthouse from 'lighthouse';
 import chromeLauncher from 'chrome-launcher';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers'
-import { glob } from 'glob';
 import open from 'open'
 
 const argv = yargs(hideBin(process.argv)).argv;
