@@ -1,22 +1,20 @@
 {
   "name": "lightmeup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows to run, save and open lighthouse reports from command line.",
   "main": "lighthouse.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node lighthouse.js"
+     "start lhr": "node lighthouse.js"
   },
   "author": "Sebastian Prestele",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "open": "^9.1.0",
     "chrome-launcher": "^0.15.2",
     "glob": "^10.2.5",
     "lighthouse": "^10.2.0",
     "yargs": "^17.7.2"
-  },
-  "dependencies": {
-    "open": "^9.1.0"
   }
 }
