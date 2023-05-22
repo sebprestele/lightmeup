@@ -28,7 +28,7 @@ const argv = yargs(hideBin(process.argv)).argv;
   // Extract necessary information
   const reportHtml = runnerResult.report;
   const testedUrl = runnerResult.lhr.finalDisplayedUrl;
-  const dirName = testedUrl.replace(/^https?:\/\//, '');
+  const dirName = testedUrl.replace(/^https?:\/\/(www\.)?|\/.*|\.[^.]+$/g, '');
   const baseDirectory = 'lighthousereports';
   const storeDirectory = `${baseDirectory}/${dirName}`;
   const finalDirectory = `${storeDirectory}/${argv.onlyCategories}`;
