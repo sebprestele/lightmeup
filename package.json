@@ -1,9 +1,12 @@
 {
   "name": "lightmeup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Allows to run, save and open lighthouse reports from command line.",
   "main": "lighthouse.js",
   "type": "module",
+  "bin": {
+  "start lhr": "./lightmeup/lighthouse.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
      "start lhr": "node lighthouse.js"
