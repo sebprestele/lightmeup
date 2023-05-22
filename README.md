@@ -15,12 +15,7 @@ npm install lightmeup
 To generate a Lighthouse report, you can run the following command:
 
 ```
-npm run lightmeup -- --url <url> --onlyCategories <categories>
-```
-
-Or
-```
-npx lightmeup
+npx lightmeup --url <url> --onlyCategories <categories>
 ```
 
 Replace <url> with the URL you want to audit, and <categories> with the specific categories you want to include in the report. Available categories are: performance, accessibility and seo.
@@ -28,7 +23,7 @@ Replace <url> with the URL you want to audit, and <categories> with the specific
 For example, to generate a report for http://example.com and include the "performance" category, you would run:
 
 ```
-npx lightmeup  -- --url http://example.com --onlyCategories performance
+npx lightmeup --url http://example.com --onlyCategories performance
 ```
 
 The generated report will be saved in a directory with the structure url -> category
@@ -49,6 +44,6 @@ This package is provided under the MIT License.
 ##Contributing
 Contributions to this package are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
 
-Credits
+##Credits
 This package was created by Sebastian Prestele.
-Built on top of --url https://github.com/GoogleChrome/lighthouse
+Built on top of https://github.com/GoogleChrome/lighthouse
