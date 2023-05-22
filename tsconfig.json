@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "noImplicitUseStrict": true,
+    "ignoreDeprecations": "5.0",
+    "allowSyntheticDefaultImports": true,
+    "module": "ES2015",
+  },
+  "files": [
+    "lighthouse.ts"
+  ],
+   "include": [
+      "./src/"
+, "lighthouse.ts"    ],
+}

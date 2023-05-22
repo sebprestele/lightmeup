@@ -1,20 +1,21 @@
 {
   "name": "lightmeup",
-  "version": "1.0.8",
+  "version": "1.1.20",
   "description": "Allows to run, save and open lighthouse reports from command line.",
   "main": "lighthouse.js",
   "type": "module",
   "bin": {
-    "lightmeup": "./dist/lighthouse.js"
+    "lightmeup": "dist/lighthouse.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lightmeup": "node ./dist/lighthouse.js",
-    "build": "babel lighthouse.js --out-file ./dist/lighthouse.js"
+    "build": "tsc",
+    "lightmeup": "node dist/lighthouse.js"
   },
   "author": "Sebastian Prestele",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^20.2.3",
     "chrome-launcher": "^0.15.2",
     "glob": "^10.2.5",
     "lighthouse": "^10.2.0",
@@ -22,8 +23,6 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
-    "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5"
+    "typescript": "^5.0.4"
   }
 }
